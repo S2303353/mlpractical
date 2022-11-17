@@ -62,8 +62,7 @@ conv_experiment = ExperimentBuilder(network_model=custom_conv_net,
                                     num_epochs=args.num_epochs,
                                     weight_decay_coefficient=args.weight_decay_coefficient,
                                     use_gpu=args.use_gpu,
-                                    
-                                    requires_grad=True,
+                                
                                     continue_from_epoch=args.continue_from_epoch,
                                     train_data=train_data_loader, val_data=val_data_loader,
                                     test_data=test_data_loader)  # build an experiment object
