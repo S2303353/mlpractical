@@ -342,7 +342,7 @@ class ConvolutionalNetwork(nn.Module):
 
 class ConvolutionalProcessingBlockBN(nn.Module):
     def __init__(self, input_shape, num_filters, kernel_size, padding, bias, dilation):
-        super(ConvolutionalProcessingBlock, self).__init__()
+        super(ConvolutionalProcessingBlockBN, self).__init__()
 
         self.num_filters = num_filters
         self.kernel_size = kernel_size
@@ -394,7 +394,7 @@ class ConvolutionalProcessingBlockBN(nn.Module):
     
 class ConvolutionalProcessingBlockBNRC(nn.Module):
     def __init__(self, input_shape, num_filters, kernel_size, padding, bias, dilation):
-        super(ConvolutionalProcessingBlock, self).__init__()
+        super(ConvolutionalProcessingBlockBNRC, self).__init__()
 
         self.num_filters = num_filters
         self.kernel_size = kernel_size
@@ -450,7 +450,7 @@ class ConvolutionalProcessingBlockBNRC(nn.Module):
 
 class ConvolutionalDimensionalityReductionBlockBNRC(nn.Module):
     def __init__(self, input_shape, num_filters, kernel_size, padding, bias, dilation, reduction_factor):
-        super(ConvolutionalDimensionalityReductionBlock, self).__init__()
+        super(ConvolutionalDimensionalityReductionBlockBNRC, self).__init__()
 
         self.num_filters = num_filters
         self.kernel_size = kernel_size
